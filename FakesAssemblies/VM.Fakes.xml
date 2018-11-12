@@ -1,0 +1,2243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VM.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.QualityTools.Testing.Fakes.Delegates.VMDelegates">
+            <summary>Contains custom delegates used for the stubs and shims of VM</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimComponent">
+            <summary>Shim type of VM.Component.Component</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimComponent.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimComponent.#ctor(VM.Component.Component)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimComponent.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimComponent.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimComponent.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimComponent.ConstructorMemory">
+            <summary>Sets the shim of Component.Component(Memory ram)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimComponent.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimMemory">
+            <summary>Shim type of VM.Component.Memory</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimMemory.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimMemory.#ctor(VM.Component.Memory)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimMemory.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimMemory.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimMemory.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimMemory.ConstructorInt32">
+            <summary>Sets the shim of Memory.Memory(Int32 size)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimMemory.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimProcess">
+            <summary>Shim type of VM.Component.Process</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimProcess.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimProcess.#ctor(VM.Component.Process)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimProcess.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimProcess.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimProcess.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimProcess.ConstructorComponent">
+            <summary>Sets the shim of Process.Process(Component mrt)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimProcess.ExecuteInt32Int32Int32">
+            <summary>Sets the shim of Process.Execute(Int32 instructionsPointer, Int32 dataPointer, Int32 stackPointer)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimProcess.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimProcess.AllInstances.ExecuteInt32Int32Int32">
+            <summary>Sets the shim of Process.Execute(Int32 instructionsPointer, Int32 dataPointer, Int32 stackPointer)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimRegisters">
+            <summary>Shim type of VM.Component.Registers</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimRegisters.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimRegisters.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimRegisters.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimRegisters.IndexOfOf1IEnumerableOfM0M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Collections.Generic.IEnumerable{``0},``0,System.Int32})">
+            <summary>Sets the shim of Registers.IndexOf(IEnumerable`1&lt;!!0&gt; lst, !!0 value)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimRegisters.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimRegisters.ConcateInt32Int32Int32">
+            <summary>Sets the shim of Registers.Concate(Int32 e_l_h_x, Int32 s_p_f_c, Int32 a_b_c_d)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimRegisters.GetHasheCodeString">
+            <summary>Sets the shim of Registers.GetHasheCode(String s)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimRegisters.GetNameInt32">
+            <summary>Sets the shim of Registers.GetName(Int32 i)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimRegisters.StaticConstructor">
+            <summary>Sets the shim of Registers.Registers()</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimRegisters.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimUAL">
+            <summary>Shim type of VM.Component.UAL</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUAL.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUAL.#ctor(VM.Component.UAL)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUAL.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUAL.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.ConstructorComponent">
+            <summary>Sets the shim of UAL.UAL(Component mtr)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.HaltOperandOperand">
+            <summary>Sets the shim of UAL.Halt(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.StaticConstructor">
+            <summary>Sets the shim of UAL.UAL()</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.aaaOperandOperand">
+            <summary>Sets the shim of UAL.aaa(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.aadOperandOperand">
+            <summary>Sets the shim of UAL.aad(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.aamOperandOperand">
+            <summary>Sets the shim of UAL.aam(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.aasOperandOperand">
+            <summary>Sets the shim of UAL.aas(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.adcOperandOperand">
+            <summary>Sets the shim of UAL.adc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.addOperandOperand">
+            <summary>Sets the shim of UAL.add(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.andOperandOperand">
+            <summary>Sets the shim of UAL.and(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.bsfOperandOperand">
+            <summary>Sets the shim of UAL.bsf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.bsrOperandOperand">
+            <summary>Sets the shim of UAL.bsr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.bswapOperandOperand">
+            <summary>Sets the shim of UAL.bswap(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.btOperandOperand">
+            <summary>Sets the shim of UAL.bt(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.btcOperandOperand">
+            <summary>Sets the shim of UAL.btc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.btrOperandOperand">
+            <summary>Sets the shim of UAL.btr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.btsOperandOperand">
+            <summary>Sets the shim of UAL.bts(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.callOperandOperand">
+            <summary>Sets the shim of UAL.call(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cbwOperandOperand">
+            <summary>Sets the shim of UAL.cbw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cdqOperandOperand">
+            <summary>Sets the shim of UAL.cdq(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.clcOperandOperand">
+            <summary>Sets the shim of UAL.clc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cldOperandOperand">
+            <summary>Sets the shim of UAL.cld(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cliOperandOperand">
+            <summary>Sets the shim of UAL.cli(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cmcOperandOperand">
+            <summary>Sets the shim of UAL.cmc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cmpOperandOperand">
+            <summary>Sets the shim of UAL.cmp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cmpsOperandOperand">
+            <summary>Sets the shim of UAL.cmps(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cmpsbOperandOperand">
+            <summary>Sets the shim of UAL.cmpsb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cmpsdOperandOperand">
+            <summary>Sets the shim of UAL.cmpsd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cmpswOperandOperand">
+            <summary>Sets the shim of UAL.cmpsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cmpxchgOperandOperand">
+            <summary>Sets the shim of UAL.cmpxchg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.cwdOperandOperand">
+            <summary>Sets the shim of UAL.cwd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.daaOperandOperand">
+            <summary>Sets the shim of UAL.daa(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.dasOperandOperand">
+            <summary>Sets the shim of UAL.das(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.decOperandOperand">
+            <summary>Sets the shim of UAL.dec(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.divOperandOperand">
+            <summary>Sets the shim of UAL.div(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.enterOperandOperand">
+            <summary>Sets the shim of UAL.enter(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fabsOperandOperand">
+            <summary>Sets the shim of UAL.fabs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.faddOperandOperand">
+            <summary>Sets the shim of UAL.fadd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.faddpOperandOperand">
+            <summary>Sets the shim of UAL.faddp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fbldfbstpOperandOperand">
+            <summary>Sets the shim of UAL.fbldfbstp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fchsOperandOperand">
+            <summary>Sets the shim of UAL.fchs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fclexOperandOperand">
+            <summary>Sets the shim of UAL.fclex(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fcmovOperandOperand">
+            <summary>Sets the shim of UAL.fcmov(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fcomOperandOperand">
+            <summary>Sets the shim of UAL.fcom(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fcomiOperandOperand">
+            <summary>Sets the shim of UAL.fcomi(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fcosOperandOperand">
+            <summary>Sets the shim of UAL.fcos(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fdecstpOperandOperand">
+            <summary>Sets the shim of UAL.fdecstp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fdivOperandOperand">
+            <summary>Sets the shim of UAL.fdiv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fdivpOperandOperand">
+            <summary>Sets the shim of UAL.fdivp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fdivrOperandOperand">
+            <summary>Sets the shim of UAL.fdivr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fdivrpOperandOperand">
+            <summary>Sets the shim of UAL.fdivrp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.ffreeOperandOperand">
+            <summary>Sets the shim of UAL.ffree(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fiaddOperandOperand">
+            <summary>Sets the shim of UAL.fiadd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.ficomOperandOperand">
+            <summary>Sets the shim of UAL.ficom(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fidivOperandOperand">
+            <summary>Sets the shim of UAL.fidiv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fidivrOperandOperand">
+            <summary>Sets the shim of UAL.fidivr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fildOperandOperand">
+            <summary>Sets the shim of UAL.fild(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fimulOperandOperand">
+            <summary>Sets the shim of UAL.fimul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fincstpOperandOperand">
+            <summary>Sets the shim of UAL.fincstp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.finitOperandOperand">
+            <summary>Sets the shim of UAL.finit(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fistOperandOperand">
+            <summary>Sets the shim of UAL.fist(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fisttpOperandOperand">
+            <summary>Sets the shim of UAL.fisttp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fisubOperandOperand">
+            <summary>Sets the shim of UAL.fisub(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fisubrOperandOperand">
+            <summary>Sets the shim of UAL.fisubr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fld1OperandOperand">
+            <summary>Sets the shim of UAL.fld1(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldCWOperandOperand">
+            <summary>Sets the shim of UAL.fldCW(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldENVOperandOperand">
+            <summary>Sets the shim of UAL.fldENV(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldL2EOperandOperand">
+            <summary>Sets the shim of UAL.fldL2E(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldL2TOperandOperand">
+            <summary>Sets the shim of UAL.fldL2T(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldLG2OperandOperand">
+            <summary>Sets the shim of UAL.fldLG2(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldLN2OperandOperand">
+            <summary>Sets the shim of UAL.fldLN2(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldOperandOperand">
+            <summary>Sets the shim of UAL.fld(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldPIOperandOperand">
+            <summary>Sets the shim of UAL.fldPI(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fldZOperandOperand">
+            <summary>Sets the shim of UAL.fldZ(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fmulOperandOperand">
+            <summary>Sets the shim of UAL.fmul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fmulpOperandOperand">
+            <summary>Sets the shim of UAL.fmulp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fnopOperandOperand">
+            <summary>Sets the shim of UAL.fnop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fpatanOperandOperand">
+            <summary>Sets the shim of UAL.fpatan(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fpremOperandOperand">
+            <summary>Sets the shim of UAL.fprem(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fptanOperandOperand">
+            <summary>Sets the shim of UAL.fptan(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.frndintOperandOperand">
+            <summary>Sets the shim of UAL.frndint(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.frstorOperandOperand">
+            <summary>Sets the shim of UAL.frstor(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsaveOperandOperand">
+            <summary>Sets the shim of UAL.fsave(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fscaleOperandOperand">
+            <summary>Sets the shim of UAL.fscale(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsinOperandOperand">
+            <summary>Sets the shim of UAL.fsin(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsincosOperandOperand">
+            <summary>Sets the shim of UAL.fsincos(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsqrtOperandOperand">
+            <summary>Sets the shim of UAL.fsqrt(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fstOperandOperand">
+            <summary>Sets the shim of UAL.fst(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fstcwOperandOperand">
+            <summary>Sets the shim of UAL.fstcw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fstenvOperandOperand">
+            <summary>Sets the shim of UAL.fstenv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fstswOperandOperand">
+            <summary>Sets the shim of UAL.fstsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsubOperandOperand">
+            <summary>Sets the shim of UAL.fsub(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsubpOperandOperand">
+            <summary>Sets the shim of UAL.fsubp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsubrOperandOperand">
+            <summary>Sets the shim of UAL.fsubr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fsubrpOperandOperand">
+            <summary>Sets the shim of UAL.fsubrp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.ftstOperandOperand">
+            <summary>Sets the shim of UAL.ftst(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fwaitOperandOperand">
+            <summary>Sets the shim of UAL.fwait(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fxamOperandOperand">
+            <summary>Sets the shim of UAL.fxam(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fxchOperandOperand">
+            <summary>Sets the shim of UAL.fxch(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fxsaveOperandOperand">
+            <summary>Sets the shim of UAL.fxsave(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fxstorOperandOperand">
+            <summary>Sets the shim of UAL.fxstor(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fxtractOperandOperand">
+            <summary>Sets the shim of UAL.fxtract(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fy2lxOperandOperand">
+            <summary>Sets the shim of UAL.fy2lx(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.fyl2xp1OperandOperand">
+            <summary>Sets the shim of UAL.fyl2xp1(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.gotoOperandOperand">
+            <summary>Sets the shim of UAL.goto(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.hltOperandOperand">
+            <summary>Sets the shim of UAL.hlt(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.idivOperandOperand">
+            <summary>Sets the shim of UAL.idiv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.imulOperandOperand">
+            <summary>Sets the shim of UAL.imul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.inOperandOperand">
+            <summary>Sets the shim of UAL.in(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.incOperandOperand">
+            <summary>Sets the shim of UAL.inc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.infOperandOperand">
+            <summary>Sets the shim of UAL.inf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.insOperandOperand">
+            <summary>Sets the shim of UAL.ins(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.insbOperandOperand">
+            <summary>Sets the shim of UAL.insb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.insdOperandOperand">
+            <summary>Sets the shim of UAL.insd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.inswOperandOperand">
+            <summary>Sets the shim of UAL.insw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.intOperandOperand">
+            <summary>Sets the shim of UAL.int(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.intoOperandOperand">
+            <summary>Sets the shim of UAL.into(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.iretOperandOperand">
+            <summary>Sets the shim of UAL.iret(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jaOperandOperand">
+            <summary>Sets the shim of UAL.ja(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jaeOperandOperand">
+            <summary>Sets the shim of UAL.jae(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jbOperandOperand">
+            <summary>Sets the shim of UAL.jb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jbeOperandOperand">
+            <summary>Sets the shim of UAL.jbe(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jcOperandOperand">
+            <summary>Sets the shim of UAL.jc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jcxzOperandOperand">
+            <summary>Sets the shim of UAL.jcxz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jeOperandOperand">
+            <summary>Sets the shim of UAL.je(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jecxzOperandOperand">
+            <summary>Sets the shim of UAL.jecxz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jgOperandOperand">
+            <summary>Sets the shim of UAL.jg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jgeOperandOperand">
+            <summary>Sets the shim of UAL.jge(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jlOperandOperand">
+            <summary>Sets the shim of UAL.jl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jleOperandOperand">
+            <summary>Sets the shim of UAL.jle(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jmpOperandOperand">
+            <summary>Sets the shim of UAL.jmp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnaOperandOperand">
+            <summary>Sets the shim of UAL.jna(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnaeOperandOperand">
+            <summary>Sets the shim of UAL.jnae(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnbOperandOperand">
+            <summary>Sets the shim of UAL.jnb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnbeOperandOperand">
+            <summary>Sets the shim of UAL.jnbe(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jncOperandOperand">
+            <summary>Sets the shim of UAL.jnc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jneOperandOperand">
+            <summary>Sets the shim of UAL.jne(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jngOperandOperand">
+            <summary>Sets the shim of UAL.jng(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jngeOperandOperand">
+            <summary>Sets the shim of UAL.jnge(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnlOperandOperand">
+            <summary>Sets the shim of UAL.jnl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnleOperandOperand">
+            <summary>Sets the shim of UAL.jnle(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnoOperandOperand">
+            <summary>Sets the shim of UAL.jno(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnpOperandOperand">
+            <summary>Sets the shim of UAL.jnp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnsOperandOperand">
+            <summary>Sets the shim of UAL.jns(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jnzOperandOperand">
+            <summary>Sets the shim of UAL.jnz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.joOperandOperand">
+            <summary>Sets the shim of UAL.jo(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jpOperandOperand">
+            <summary>Sets the shim of UAL.jp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jpeOperandOperand">
+            <summary>Sets the shim of UAL.jpe(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jpoOperandOperand">
+            <summary>Sets the shim of UAL.jpo(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jsOperandOperand">
+            <summary>Sets the shim of UAL.js(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.jzOperandOperand">
+            <summary>Sets the shim of UAL.jz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lahfOperandOperand">
+            <summary>Sets the shim of UAL.lahf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.ldsOperandOperand">
+            <summary>Sets the shim of UAL.lds(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.leaOperandOperand">
+            <summary>Sets the shim of UAL.lea(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.leaveOperandOperand">
+            <summary>Sets the shim of UAL.leave(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lesOperandOperand">
+            <summary>Sets the shim of UAL.les(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lfsOperandOperand">
+            <summary>Sets the shim of UAL.lfs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lgsOperandOperand">
+            <summary>Sets the shim of UAL.lgs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lockOperandOperand">
+            <summary>Sets the shim of UAL.lock(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lodsOperandOperand">
+            <summary>Sets the shim of UAL.lods(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lodsbOperandOperand">
+            <summary>Sets the shim of UAL.lodsb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lodsdOperandOperand">
+            <summary>Sets the shim of UAL.lodsd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lodswOperandOperand">
+            <summary>Sets the shim of UAL.lodsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.loopOperandOperand">
+            <summary>Sets the shim of UAL.loop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.loopdOperandOperand">
+            <summary>Sets the shim of UAL.loopd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.loopeOperandOperand">
+            <summary>Sets the shim of UAL.loope(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.loopneOperandOperand">
+            <summary>Sets the shim of UAL.loopne(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.loopnzOperandOperand">
+            <summary>Sets the shim of UAL.loopnz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.loopwOperandOperand">
+            <summary>Sets the shim of UAL.loopw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.loopzOperandOperand">
+            <summary>Sets the shim of UAL.loopz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.lssOperandOperand">
+            <summary>Sets the shim of UAL.lss(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.movOperandOperand">
+            <summary>Sets the shim of UAL.mov(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.movsOperandOperand">
+            <summary>Sets the shim of UAL.movs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.movsbOperandOperand">
+            <summary>Sets the shim of UAL.movsb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.movsdOperandOperand">
+            <summary>Sets the shim of UAL.movsd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.movswOperandOperand">
+            <summary>Sets the shim of UAL.movsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.movsxOperandOperand">
+            <summary>Sets the shim of UAL.movsx(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.movzxOperandOperand">
+            <summary>Sets the shim of UAL.movzx(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.mulOperandOperand">
+            <summary>Sets the shim of UAL.mul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.negOperandOperand">
+            <summary>Sets the shim of UAL.neg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.nopOperandOperand">
+            <summary>Sets the shim of UAL.nop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.notOperandOperand">
+            <summary>Sets the shim of UAL.not(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.orOperandOperand">
+            <summary>Sets the shim of UAL.or(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.outOperandOperand">
+            <summary>Sets the shim of UAL.out(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.outbOperandOperand">
+            <summary>Sets the shim of UAL.outb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.outdOperandOperand">
+            <summary>Sets the shim of UAL.outd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.outsOperandOperand">
+            <summary>Sets the shim of UAL.outs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.outwOperandOperand">
+            <summary>Sets the shim of UAL.outw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.popOperandOperand">
+            <summary>Sets the shim of UAL.pop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.popaOperandOperand">
+            <summary>Sets the shim of UAL.popa(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.popadOperandOperand">
+            <summary>Sets the shim of UAL.popad(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.popfOperandOperand">
+            <summary>Sets the shim of UAL.popf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.popfdOperandOperand">
+            <summary>Sets the shim of UAL.popfd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.powOperandOperand">
+            <summary>Sets the shim of UAL.pow(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.pushOperandOperand">
+            <summary>Sets the shim of UAL.push(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.pushaOperandOperand">
+            <summary>Sets the shim of UAL.pusha(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.pushadOperandOperand">
+            <summary>Sets the shim of UAL.pushad(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.pushdOperandOperand">
+            <summary>Sets the shim of UAL.pushd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.pushfOperandOperand">
+            <summary>Sets the shim of UAL.pushf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.pushfdOperandOperand">
+            <summary>Sets the shim of UAL.pushfd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.pushwOperandOperand">
+            <summary>Sets the shim of UAL.pushw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.rclOperandOperand">
+            <summary>Sets the shim of UAL.rcl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.rcrOperandOperand">
+            <summary>Sets the shim of UAL.rcr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.repOperandOperand">
+            <summary>Sets the shim of UAL.rep(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.retOperandOperand">
+            <summary>Sets the shim of UAL.ret(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.retfOperandOperand">
+            <summary>Sets the shim of UAL.retf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.retnOperandOperand">
+            <summary>Sets the shim of UAL.retn(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.rolOperandOperand">
+            <summary>Sets the shim of UAL.rol(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.ropOperandOperand">
+            <summary>Sets the shim of UAL.rop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.rorOperandOperand">
+            <summary>Sets the shim of UAL.ror(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.sahfOperandOperand">
+            <summary>Sets the shim of UAL.sahf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.salOperandOperand">
+            <summary>Sets the shim of UAL.sal(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.sarOperandOperand">
+            <summary>Sets the shim of UAL.sar(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.sbbOperandOperand">
+            <summary>Sets the shim of UAL.sbb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.scasOperandOperand">
+            <summary>Sets the shim of UAL.scas(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.scasbOperandOperand">
+            <summary>Sets the shim of UAL.scasb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.scasdOperandOperand">
+            <summary>Sets the shim of UAL.scasd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.scaswOperandOperand">
+            <summary>Sets the shim of UAL.scasw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.shlOperandOperand">
+            <summary>Sets the shim of UAL.shl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.shldOperandOperand">
+            <summary>Sets the shim of UAL.shld(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.shrOperandOperand">
+            <summary>Sets the shim of UAL.shr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.shrdOperandOperand">
+            <summary>Sets the shim of UAL.shrd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.stdOperandOperand">
+            <summary>Sets the shim of UAL.std(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.stiOperandOperand">
+            <summary>Sets the shim of UAL.sti(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.stosOperandOperand">
+            <summary>Sets the shim of UAL.stos(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.stosbOperandOperand">
+            <summary>Sets the shim of UAL.stosb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.stosdOperandOperand">
+            <summary>Sets the shim of UAL.stosd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.stoswOperandOperand">
+            <summary>Sets the shim of UAL.stosw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.stsOperandOperand">
+            <summary>Sets the shim of UAL.sts(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.subOperandOperand">
+            <summary>Sets the shim of UAL.sub(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.supOperandOperand">
+            <summary>Sets the shim of UAL.sup(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.testOperandOperand">
+            <summary>Sets the shim of UAL.test(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.waitOperandOperand">
+            <summary>Sets the shim of UAL.wait(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.xaddOperandOperand">
+            <summary>Sets the shim of UAL.xadd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.xandOperandOperand">
+            <summary>Sets the shim of UAL.xand(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.xchgOperandOperand">
+            <summary>Sets the shim of UAL.xchg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.xlatOperandOperand">
+            <summary>Sets the shim of UAL.xlat(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.xlatbOperandOperand">
+            <summary>Sets the shim of UAL.xlatb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.xorOperandOperand">
+            <summary>Sets the shim of UAL.xor(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimUAL.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.aaaOperandOperand">
+            <summary>Sets the shim of UAL.aaa(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.aadOperandOperand">
+            <summary>Sets the shim of UAL.aad(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.aamOperandOperand">
+            <summary>Sets the shim of UAL.aam(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.aasOperandOperand">
+            <summary>Sets the shim of UAL.aas(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.adcOperandOperand">
+            <summary>Sets the shim of UAL.adc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.addOperandOperand">
+            <summary>Sets the shim of UAL.add(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.andOperandOperand">
+            <summary>Sets the shim of UAL.and(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.bsfOperandOperand">
+            <summary>Sets the shim of UAL.bsf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.bsrOperandOperand">
+            <summary>Sets the shim of UAL.bsr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.bswapOperandOperand">
+            <summary>Sets the shim of UAL.bswap(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.btOperandOperand">
+            <summary>Sets the shim of UAL.bt(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.btcOperandOperand">
+            <summary>Sets the shim of UAL.btc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.btrOperandOperand">
+            <summary>Sets the shim of UAL.btr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.btsOperandOperand">
+            <summary>Sets the shim of UAL.bts(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.callOperandOperand">
+            <summary>Sets the shim of UAL.call(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cbwOperandOperand">
+            <summary>Sets the shim of UAL.cbw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cdqOperandOperand">
+            <summary>Sets the shim of UAL.cdq(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.clcOperandOperand">
+            <summary>Sets the shim of UAL.clc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cldOperandOperand">
+            <summary>Sets the shim of UAL.cld(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cliOperandOperand">
+            <summary>Sets the shim of UAL.cli(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cmcOperandOperand">
+            <summary>Sets the shim of UAL.cmc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cmpOperandOperand">
+            <summary>Sets the shim of UAL.cmp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cmpsOperandOperand">
+            <summary>Sets the shim of UAL.cmps(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cmpsbOperandOperand">
+            <summary>Sets the shim of UAL.cmpsb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cmpsdOperandOperand">
+            <summary>Sets the shim of UAL.cmpsd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cmpswOperandOperand">
+            <summary>Sets the shim of UAL.cmpsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cmpxchgOperandOperand">
+            <summary>Sets the shim of UAL.cmpxchg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.cwdOperandOperand">
+            <summary>Sets the shim of UAL.cwd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.daaOperandOperand">
+            <summary>Sets the shim of UAL.daa(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.dasOperandOperand">
+            <summary>Sets the shim of UAL.das(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.decOperandOperand">
+            <summary>Sets the shim of UAL.dec(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.divOperandOperand">
+            <summary>Sets the shim of UAL.div(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.enterOperandOperand">
+            <summary>Sets the shim of UAL.enter(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fabsOperandOperand">
+            <summary>Sets the shim of UAL.fabs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.faddOperandOperand">
+            <summary>Sets the shim of UAL.fadd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.faddpOperandOperand">
+            <summary>Sets the shim of UAL.faddp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fbldfbstpOperandOperand">
+            <summary>Sets the shim of UAL.fbldfbstp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fchsOperandOperand">
+            <summary>Sets the shim of UAL.fchs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fclexOperandOperand">
+            <summary>Sets the shim of UAL.fclex(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fcmovOperandOperand">
+            <summary>Sets the shim of UAL.fcmov(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fcomOperandOperand">
+            <summary>Sets the shim of UAL.fcom(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fcomiOperandOperand">
+            <summary>Sets the shim of UAL.fcomi(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fcosOperandOperand">
+            <summary>Sets the shim of UAL.fcos(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fdecstpOperandOperand">
+            <summary>Sets the shim of UAL.fdecstp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fdivOperandOperand">
+            <summary>Sets the shim of UAL.fdiv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fdivpOperandOperand">
+            <summary>Sets the shim of UAL.fdivp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fdivrOperandOperand">
+            <summary>Sets the shim of UAL.fdivr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fdivrpOperandOperand">
+            <summary>Sets the shim of UAL.fdivrp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.ffreeOperandOperand">
+            <summary>Sets the shim of UAL.ffree(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fiaddOperandOperand">
+            <summary>Sets the shim of UAL.fiadd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.ficomOperandOperand">
+            <summary>Sets the shim of UAL.ficom(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fidivOperandOperand">
+            <summary>Sets the shim of UAL.fidiv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fidivrOperandOperand">
+            <summary>Sets the shim of UAL.fidivr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fildOperandOperand">
+            <summary>Sets the shim of UAL.fild(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fimulOperandOperand">
+            <summary>Sets the shim of UAL.fimul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fincstpOperandOperand">
+            <summary>Sets the shim of UAL.fincstp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.finitOperandOperand">
+            <summary>Sets the shim of UAL.finit(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fistOperandOperand">
+            <summary>Sets the shim of UAL.fist(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fisttpOperandOperand">
+            <summary>Sets the shim of UAL.fisttp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fisubOperandOperand">
+            <summary>Sets the shim of UAL.fisub(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fisubrOperandOperand">
+            <summary>Sets the shim of UAL.fisubr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fld1OperandOperand">
+            <summary>Sets the shim of UAL.fld1(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldCWOperandOperand">
+            <summary>Sets the shim of UAL.fldCW(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldENVOperandOperand">
+            <summary>Sets the shim of UAL.fldENV(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldL2EOperandOperand">
+            <summary>Sets the shim of UAL.fldL2E(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldL2TOperandOperand">
+            <summary>Sets the shim of UAL.fldL2T(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldLG2OperandOperand">
+            <summary>Sets the shim of UAL.fldLG2(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldLN2OperandOperand">
+            <summary>Sets the shim of UAL.fldLN2(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldOperandOperand">
+            <summary>Sets the shim of UAL.fld(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldPIOperandOperand">
+            <summary>Sets the shim of UAL.fldPI(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fldZOperandOperand">
+            <summary>Sets the shim of UAL.fldZ(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fmulOperandOperand">
+            <summary>Sets the shim of UAL.fmul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fmulpOperandOperand">
+            <summary>Sets the shim of UAL.fmulp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fnopOperandOperand">
+            <summary>Sets the shim of UAL.fnop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fpatanOperandOperand">
+            <summary>Sets the shim of UAL.fpatan(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fpremOperandOperand">
+            <summary>Sets the shim of UAL.fprem(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fptanOperandOperand">
+            <summary>Sets the shim of UAL.fptan(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.frndintOperandOperand">
+            <summary>Sets the shim of UAL.frndint(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.frstorOperandOperand">
+            <summary>Sets the shim of UAL.frstor(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsaveOperandOperand">
+            <summary>Sets the shim of UAL.fsave(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fscaleOperandOperand">
+            <summary>Sets the shim of UAL.fscale(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsinOperandOperand">
+            <summary>Sets the shim of UAL.fsin(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsincosOperandOperand">
+            <summary>Sets the shim of UAL.fsincos(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsqrtOperandOperand">
+            <summary>Sets the shim of UAL.fsqrt(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fstOperandOperand">
+            <summary>Sets the shim of UAL.fst(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fstcwOperandOperand">
+            <summary>Sets the shim of UAL.fstcw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fstenvOperandOperand">
+            <summary>Sets the shim of UAL.fstenv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fstswOperandOperand">
+            <summary>Sets the shim of UAL.fstsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsubOperandOperand">
+            <summary>Sets the shim of UAL.fsub(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsubpOperandOperand">
+            <summary>Sets the shim of UAL.fsubp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsubrOperandOperand">
+            <summary>Sets the shim of UAL.fsubr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fsubrpOperandOperand">
+            <summary>Sets the shim of UAL.fsubrp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.ftstOperandOperand">
+            <summary>Sets the shim of UAL.ftst(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fwaitOperandOperand">
+            <summary>Sets the shim of UAL.fwait(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fxamOperandOperand">
+            <summary>Sets the shim of UAL.fxam(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fxchOperandOperand">
+            <summary>Sets the shim of UAL.fxch(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fxsaveOperandOperand">
+            <summary>Sets the shim of UAL.fxsave(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fxstorOperandOperand">
+            <summary>Sets the shim of UAL.fxstor(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fxtractOperandOperand">
+            <summary>Sets the shim of UAL.fxtract(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fy2lxOperandOperand">
+            <summary>Sets the shim of UAL.fy2lx(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.fyl2xp1OperandOperand">
+            <summary>Sets the shim of UAL.fyl2xp1(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.gotoOperandOperand">
+            <summary>Sets the shim of UAL.goto(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.hltOperandOperand">
+            <summary>Sets the shim of UAL.hlt(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.idivOperandOperand">
+            <summary>Sets the shim of UAL.idiv(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.imulOperandOperand">
+            <summary>Sets the shim of UAL.imul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.inOperandOperand">
+            <summary>Sets the shim of UAL.in(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.incOperandOperand">
+            <summary>Sets the shim of UAL.inc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.infOperandOperand">
+            <summary>Sets the shim of UAL.inf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.insOperandOperand">
+            <summary>Sets the shim of UAL.ins(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.insbOperandOperand">
+            <summary>Sets the shim of UAL.insb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.insdOperandOperand">
+            <summary>Sets the shim of UAL.insd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.inswOperandOperand">
+            <summary>Sets the shim of UAL.insw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.intOperandOperand">
+            <summary>Sets the shim of UAL.int(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.intoOperandOperand">
+            <summary>Sets the shim of UAL.into(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.iretOperandOperand">
+            <summary>Sets the shim of UAL.iret(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jaOperandOperand">
+            <summary>Sets the shim of UAL.ja(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jaeOperandOperand">
+            <summary>Sets the shim of UAL.jae(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jbOperandOperand">
+            <summary>Sets the shim of UAL.jb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jbeOperandOperand">
+            <summary>Sets the shim of UAL.jbe(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jcOperandOperand">
+            <summary>Sets the shim of UAL.jc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jcxzOperandOperand">
+            <summary>Sets the shim of UAL.jcxz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jeOperandOperand">
+            <summary>Sets the shim of UAL.je(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jecxzOperandOperand">
+            <summary>Sets the shim of UAL.jecxz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jgOperandOperand">
+            <summary>Sets the shim of UAL.jg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jgeOperandOperand">
+            <summary>Sets the shim of UAL.jge(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jlOperandOperand">
+            <summary>Sets the shim of UAL.jl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jleOperandOperand">
+            <summary>Sets the shim of UAL.jle(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jmpOperandOperand">
+            <summary>Sets the shim of UAL.jmp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnaOperandOperand">
+            <summary>Sets the shim of UAL.jna(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnaeOperandOperand">
+            <summary>Sets the shim of UAL.jnae(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnbOperandOperand">
+            <summary>Sets the shim of UAL.jnb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnbeOperandOperand">
+            <summary>Sets the shim of UAL.jnbe(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jncOperandOperand">
+            <summary>Sets the shim of UAL.jnc(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jneOperandOperand">
+            <summary>Sets the shim of UAL.jne(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jngOperandOperand">
+            <summary>Sets the shim of UAL.jng(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jngeOperandOperand">
+            <summary>Sets the shim of UAL.jnge(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnlOperandOperand">
+            <summary>Sets the shim of UAL.jnl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnleOperandOperand">
+            <summary>Sets the shim of UAL.jnle(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnoOperandOperand">
+            <summary>Sets the shim of UAL.jno(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnpOperandOperand">
+            <summary>Sets the shim of UAL.jnp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnsOperandOperand">
+            <summary>Sets the shim of UAL.jns(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jnzOperandOperand">
+            <summary>Sets the shim of UAL.jnz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.joOperandOperand">
+            <summary>Sets the shim of UAL.jo(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jpOperandOperand">
+            <summary>Sets the shim of UAL.jp(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jpeOperandOperand">
+            <summary>Sets the shim of UAL.jpe(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jpoOperandOperand">
+            <summary>Sets the shim of UAL.jpo(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jsOperandOperand">
+            <summary>Sets the shim of UAL.js(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.jzOperandOperand">
+            <summary>Sets the shim of UAL.jz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lahfOperandOperand">
+            <summary>Sets the shim of UAL.lahf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.ldsOperandOperand">
+            <summary>Sets the shim of UAL.lds(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.leaOperandOperand">
+            <summary>Sets the shim of UAL.lea(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.leaveOperandOperand">
+            <summary>Sets the shim of UAL.leave(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lesOperandOperand">
+            <summary>Sets the shim of UAL.les(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lfsOperandOperand">
+            <summary>Sets the shim of UAL.lfs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lgsOperandOperand">
+            <summary>Sets the shim of UAL.lgs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lockOperandOperand">
+            <summary>Sets the shim of UAL.lock(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lodsOperandOperand">
+            <summary>Sets the shim of UAL.lods(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lodsbOperandOperand">
+            <summary>Sets the shim of UAL.lodsb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lodsdOperandOperand">
+            <summary>Sets the shim of UAL.lodsd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lodswOperandOperand">
+            <summary>Sets the shim of UAL.lodsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.loopOperandOperand">
+            <summary>Sets the shim of UAL.loop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.loopdOperandOperand">
+            <summary>Sets the shim of UAL.loopd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.loopeOperandOperand">
+            <summary>Sets the shim of UAL.loope(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.loopneOperandOperand">
+            <summary>Sets the shim of UAL.loopne(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.loopnzOperandOperand">
+            <summary>Sets the shim of UAL.loopnz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.loopwOperandOperand">
+            <summary>Sets the shim of UAL.loopw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.loopzOperandOperand">
+            <summary>Sets the shim of UAL.loopz(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.lssOperandOperand">
+            <summary>Sets the shim of UAL.lss(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.movOperandOperand">
+            <summary>Sets the shim of UAL.mov(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.movsOperandOperand">
+            <summary>Sets the shim of UAL.movs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.movsbOperandOperand">
+            <summary>Sets the shim of UAL.movsb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.movsdOperandOperand">
+            <summary>Sets the shim of UAL.movsd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.movswOperandOperand">
+            <summary>Sets the shim of UAL.movsw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.movsxOperandOperand">
+            <summary>Sets the shim of UAL.movsx(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.movzxOperandOperand">
+            <summary>Sets the shim of UAL.movzx(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.mulOperandOperand">
+            <summary>Sets the shim of UAL.mul(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.negOperandOperand">
+            <summary>Sets the shim of UAL.neg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.nopOperandOperand">
+            <summary>Sets the shim of UAL.nop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.notOperandOperand">
+            <summary>Sets the shim of UAL.not(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.orOperandOperand">
+            <summary>Sets the shim of UAL.or(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.outOperandOperand">
+            <summary>Sets the shim of UAL.out(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.outbOperandOperand">
+            <summary>Sets the shim of UAL.outb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.outdOperandOperand">
+            <summary>Sets the shim of UAL.outd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.outsOperandOperand">
+            <summary>Sets the shim of UAL.outs(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.outwOperandOperand">
+            <summary>Sets the shim of UAL.outw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.popOperandOperand">
+            <summary>Sets the shim of UAL.pop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.popaOperandOperand">
+            <summary>Sets the shim of UAL.popa(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.popadOperandOperand">
+            <summary>Sets the shim of UAL.popad(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.popfOperandOperand">
+            <summary>Sets the shim of UAL.popf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.popfdOperandOperand">
+            <summary>Sets the shim of UAL.popfd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.powOperandOperand">
+            <summary>Sets the shim of UAL.pow(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.pushOperandOperand">
+            <summary>Sets the shim of UAL.push(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.pushaOperandOperand">
+            <summary>Sets the shim of UAL.pusha(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.pushadOperandOperand">
+            <summary>Sets the shim of UAL.pushad(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.pushdOperandOperand">
+            <summary>Sets the shim of UAL.pushd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.pushfOperandOperand">
+            <summary>Sets the shim of UAL.pushf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.pushfdOperandOperand">
+            <summary>Sets the shim of UAL.pushfd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.pushwOperandOperand">
+            <summary>Sets the shim of UAL.pushw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.rclOperandOperand">
+            <summary>Sets the shim of UAL.rcl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.rcrOperandOperand">
+            <summary>Sets the shim of UAL.rcr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.repOperandOperand">
+            <summary>Sets the shim of UAL.rep(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.retOperandOperand">
+            <summary>Sets the shim of UAL.ret(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.retfOperandOperand">
+            <summary>Sets the shim of UAL.retf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.retnOperandOperand">
+            <summary>Sets the shim of UAL.retn(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.rolOperandOperand">
+            <summary>Sets the shim of UAL.rol(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.ropOperandOperand">
+            <summary>Sets the shim of UAL.rop(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.rorOperandOperand">
+            <summary>Sets the shim of UAL.ror(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.sahfOperandOperand">
+            <summary>Sets the shim of UAL.sahf(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.salOperandOperand">
+            <summary>Sets the shim of UAL.sal(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.sarOperandOperand">
+            <summary>Sets the shim of UAL.sar(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.sbbOperandOperand">
+            <summary>Sets the shim of UAL.sbb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.scasOperandOperand">
+            <summary>Sets the shim of UAL.scas(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.scasbOperandOperand">
+            <summary>Sets the shim of UAL.scasb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.scasdOperandOperand">
+            <summary>Sets the shim of UAL.scasd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.scaswOperandOperand">
+            <summary>Sets the shim of UAL.scasw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.shlOperandOperand">
+            <summary>Sets the shim of UAL.shl(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.shldOperandOperand">
+            <summary>Sets the shim of UAL.shld(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.shrOperandOperand">
+            <summary>Sets the shim of UAL.shr(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.shrdOperandOperand">
+            <summary>Sets the shim of UAL.shrd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.stdOperandOperand">
+            <summary>Sets the shim of UAL.std(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.stiOperandOperand">
+            <summary>Sets the shim of UAL.sti(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.stosOperandOperand">
+            <summary>Sets the shim of UAL.stos(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.stosbOperandOperand">
+            <summary>Sets the shim of UAL.stosb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.stosdOperandOperand">
+            <summary>Sets the shim of UAL.stosd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.stoswOperandOperand">
+            <summary>Sets the shim of UAL.stosw(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.stsOperandOperand">
+            <summary>Sets the shim of UAL.sts(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.subOperandOperand">
+            <summary>Sets the shim of UAL.sub(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.supOperandOperand">
+            <summary>Sets the shim of UAL.sup(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.testOperandOperand">
+            <summary>Sets the shim of UAL.test(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.waitOperandOperand">
+            <summary>Sets the shim of UAL.wait(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.xaddOperandOperand">
+            <summary>Sets the shim of UAL.xadd(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.xandOperandOperand">
+            <summary>Sets the shim of UAL.xand(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.xchgOperandOperand">
+            <summary>Sets the shim of UAL.xchg(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.xlatOperandOperand">
+            <summary>Sets the shim of UAL.xlat(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.xlatbOperandOperand">
+            <summary>Sets the shim of UAL.xlatb(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUAL.AllInstances.xorOperandOperand">
+            <summary>Sets the shim of UAL.xor(Operand v1, Operand v2)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimUMC">
+            <summary>Shim type of VM.Component.UMC</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUMC.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUMC.#ctor(VM.Component.UMC)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUMC.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.ShimUMC.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.ConstructorComponent">
+            <summary>Sets the shim of UMC.UMC(Component MRT)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.GetAddressInt32">
+            <summary>Sets the shim of UMC.GetAddress(Int32 memoperand)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.GetValueOperand">
+            <summary>Sets the shim of UMC.GetValue(Operand o)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.Mem_GetValueInt32">
+            <summary>Sets the shim of UMC.Mem_GetValue(Int32 i)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.Mem_SetValueOperandInt32">
+            <summary>Sets the shim of UMC.Mem_SetValue(Operand o, Int32 value)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.SetValueOperandInt32">
+            <summary>Sets the shim of UMC.SetValue(Operand o, Int32 value)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.ShimUMC.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.AllInstances.GetAddressInt32">
+            <summary>Sets the shim of UMC.GetAddress(Int32 memoperand)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.AllInstances.GetValueOperand">
+            <summary>Sets the shim of UMC.GetValue(Operand o)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.AllInstances.Mem_GetValueInt32">
+            <summary>Sets the shim of UMC.Mem_GetValue(Int32 i)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.AllInstances.Mem_SetValueOperandInt32">
+            <summary>Sets the shim of UMC.Mem_SetValue(Operand o, Int32 value)</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.ShimUMC.AllInstances.SetValueOperandInt32">
+            <summary>Sets the shim of UMC.SetValue(Operand o, Int32 value)</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.StubComponent">
+            <summary>Stub type of VM.Component.Component</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubComponent.#ctor(VM.Component.Memory)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubComponent.InitializeStub">
+            <summary>Initializes a new instance of type StubComponent</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubComponent.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubComponent.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubComponent.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.StubMemory">
+            <summary>Stub type of VM.Component.Memory</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubMemory.#ctor(System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubMemory.InitializeStub">
+            <summary>Initializes a new instance of type StubMemory</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubMemory.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubMemory.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubMemory.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.StubProcess">
+            <summary>Stub type of VM.Component.Process</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubProcess.#ctor(VM.Component.Component)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubProcess.InitializeStub">
+            <summary>Initializes a new instance of type StubProcess</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubProcess.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubProcess.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubProcess.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.StubUAL">
+            <summary>Stub type of VM.Component.UAL</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubUAL.#ctor(VM.Component.Component)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubUAL.InitializeStub">
+            <summary>Initializes a new instance of type StubUAL</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubUAL.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubUAL.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubUAL.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:VM.Component.Fakes.StubUMC">
+            <summary>Stub type of VM.Component.UMC</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubUMC.#ctor(VM.Component.Component)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Component.Fakes.StubUMC.InitializeStub">
+            <summary>Initializes a new instance of type StubUMC</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubUMC.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubUMC.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Component.Fakes.StubUMC.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:VM.Fakes.ShimProgramm">
+            <summary>Shim type of VM.Programm</summary>
+        </member>
+        <member name="M:VM.Fakes.ShimProgramm.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Fakes.ShimProgramm.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Fakes.ShimProgramm.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Fakes.ShimProgramm.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Fakes.ShimProgramm.Exmp">
+            <summary>Sets the shim of Programm.Exmp()</summary>
+        </member>
+        <member name="P:VM.Fakes.ShimProgramm.Main">
+            <summary>Sets the shim of Programm.Main()</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimBit">
+            <summary>Shim type of VM.Global.Bit</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimBit.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimBit.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimBit.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.CoderObject">
+            <summary>Sets the shim of Bit.Coder(Object num)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.DecodeByteArray">
+            <summary>Sets the shim of Bit.Decode(Byte[] bytes)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.StaticConstructor">
+            <summary>Sets the shim of Bit.Bit()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.getByteArrayInt32Int32Int32">
+            <summary>Sets the shim of Bit.get(Byte[] mem, Int32 start, Int32 len, Int32 Offset)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.getByteByteArrayInt32Int32Int32">
+            <summary>Sets the shim of Bit.getByte(Byte[] mem, Int32 start, Int32 len, Int32 Offset)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.getByteInt32Int32">
+            <summary>Sets the shim of Bit.get(Byte b, Int32 start, Int32 length)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.setByteArrayByteArrayInt32Int32Int32">
+            <summary>Sets the shim of Bit.set(Byte[] mem, Byte[] value, Int32 start, Int32 len, Int32 Offset)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.setByteByteArrayByteInt32Int32Int32">
+            <summary>Sets the shim of Bit.setByte(Byte[] mem, Byte value, Int32 start, Int32 len, Int32 Offset)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimBit.setByteByteInt32Int32">
+            <summary>Sets the shim of Bit.set(Byte b, Byte value, Int32 start, Int32 length)</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimHelp">
+            <summary>Shim type of VM.Global.Help</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimHelp.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimHelp.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimHelp.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimHelp.IsSameAsOf1MethodInfoObject``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Reflection.MethodInfo,System.Object,System.Boolean})">
+            <summary>Sets the shim of Help.IsSameAs(MethodInfo method, Object obj)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimHelp.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimHelp.ImportString">
+            <summary>Sets the shim of Help.Import(String type)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimHelp.ImportType">
+            <summary>Sets the shim of Help.Import(Type t)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimHelp.ImportTypeObject">
+            <summary>Sets the shim of Help.Import(Type t, Object instant)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimHelp._ImportIReflectObjectBindingFlags">
+            <summary>Sets the shim of Help._Import(IReflect t, Object obj, BindingFlags staticBinding)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimHelp.__Importb__1MethodInfo">
+            <summary>Sets the shim of Help.&lt;_Import&gt;b__1(MethodInfo methodInfo)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimHelp.x86Instructions">
+            <summary>Sets the shim of Help.x86Instructions()</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimNbit">
+            <summary>Shim type of VM.Global.Nbit</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimNbit.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimNbit.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimNbit.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.AdditionOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_Addition(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.ConvertNbitByte">
+            <summary>Sets the shim of Nbit.Convert(Nbit a, Byte fsize)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.DivisionOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_Division(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.EqualityOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_Equality(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.GreaterThanOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_GreaterThan(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.ImplicitOpInt32Nbit">
+            <summary>Sets the shim of Nbit.op_Implicit(Int32 a)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.ImplicitOpNbitInt32">
+            <summary>Sets the shim of Nbit.op_Implicit(Nbit a)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.InequalityOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_Inequality(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.IsInRangeInt32Byte">
+            <summary>Sets the shim of Nbit.IsInRange(Int32 val, Byte size)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.LessThanOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_LessThan(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.MultiplyOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_Multiply(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.NegateInt32Byte">
+            <summary>Sets the shim of Nbit.Negate(Int32 val, Byte size)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.PlusOverflowNbitNbit">
+            <summary>Sets the shim of Nbit.PlusOverflow(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.SizeOfInt32">
+            <summary>Sets the shim of Nbit.SizeOf(Int32 a)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.SubtractionOpNbitNbit">
+            <summary>Sets the shim of Nbit.op_Subtraction(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.TimeOverflowNbitNbit">
+            <summary>Sets the shim of Nbit.TimeOverflow(Nbit a, Nbit b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.UnaryNegationOpNbit">
+            <summary>Sets the shim of Nbit.op_UnaryNegation(Nbit a)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.UpdateNbitRefNbitRef">
+            <summary>Sets the shim of Nbit.Update(Nbit&amp; a, Nbit&amp; b)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimNbit.swapInt32Int32">
+            <summary>Sets the shim of Nbit.swap(Int32 val, Int32 size)</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimNbit.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimStream">
+            <summary>Shim type of VM.Global.Stream</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStream.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStream.#ctor(VM.Global.Stream)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStream.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStream.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.CapacityGet">
+            <summary>Sets the shim of Stream.get_Capacity()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.CapacitySetInt32">
+            <summary>Sets the shim of Stream.set_Capacity(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.ConstructorBooleanInt32Int32">
+            <summary>Sets the shim of Stream.Stream(Boolean compressed, Int32 shiftCapacity, Int32 initialSize)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.ConstructorByteArrayRefInt32Boolean">
+            <summary>Sets the shim of Stream.Stream(Byte[]&amp; array, Int32 shiftCapacity, Boolean Compressed)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.ConstructorStream">
+            <summary>Sets the shim of Stream.Stream(Stream stream)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.CopyToByteArrayOut">
+            <summary>Sets the shim of Stream.CopyTo(Byte[]&amp; array)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.IPGet">
+            <summary>Sets the shim of Stream.get_IP()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.IPSetInt32">
+            <summary>Sets the shim of Stream.set_IP(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.LoadStreamBoolean">
+            <summary>Sets the shim of Stream.Load(Stream stream, Boolean append)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.OffsetGet">
+            <summary>Sets the shim of Stream.get_Offset()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.OffsetSetInt32">
+            <summary>Sets the shim of Stream.set_Offset(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.ResetBoolean">
+            <summary>Sets the shim of Stream.Reset(Boolean deepClean)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.SaveStreamBooleanBoolean">
+            <summary>Sets the shim of Stream.Save(Stream stream, Boolean append, Boolean allBits)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.ToNextByte">
+            <summary>Sets the shim of Stream.ToNextByte()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.pushByteArrayInt32">
+            <summary>Sets the shim of Stream.push(Byte[] bytes, Int32 length_Bits)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.pushByteArrayInt32Int32Int32">
+            <summary>Sets the shim of Stream.push(Byte[] bytes, Int32 length_Bits, Int32 offset, Int32 ip)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.pushByteInt32">
+            <summary>Sets the shim of Stream.push(Byte value, Int32 length)</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimStream.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.CapacityGet">
+            <summary>Sets the shim of Stream.get_Capacity()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.CapacitySetInt32">
+            <summary>Sets the shim of Stream.set_Capacity(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.CopyToByteArrayOut">
+            <summary>Sets the shim of Stream.CopyTo(Byte[]&amp; array)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.IPGet">
+            <summary>Sets the shim of Stream.get_IP()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.IPSetInt32">
+            <summary>Sets the shim of Stream.set_IP(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.LoadStreamBoolean">
+            <summary>Sets the shim of Stream.Load(Stream stream, Boolean append)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.OffsetGet">
+            <summary>Sets the shim of Stream.get_Offset()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.OffsetSetInt32">
+            <summary>Sets the shim of Stream.set_Offset(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.ResetBoolean">
+            <summary>Sets the shim of Stream.Reset(Boolean deepClean)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.SaveStreamBooleanBoolean">
+            <summary>Sets the shim of Stream.Save(Stream stream, Boolean append, Boolean allBits)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.ToNextByte">
+            <summary>Sets the shim of Stream.ToNextByte()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.pushByteArrayInt32">
+            <summary>Sets the shim of Stream.push(Byte[] bytes, Int32 length_Bits)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.pushByteArrayInt32Int32Int32">
+            <summary>Sets the shim of Stream.push(Byte[] bytes, Int32 length_Bits, Int32 offset, Int32 ip)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStream.AllInstances.pushByteInt32">
+            <summary>Sets the shim of Stream.push(Byte value, Int32 length)</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimStreamReader">
+            <summary>Shim type of VM.Global.StreamReader</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStreamReader.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStreamReader.#ctor(VM.Global.StreamReader)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStreamReader.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.ShimStreamReader.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.ConstructorStream">
+            <summary>Sets the shim of StreamReader.StreamReader(Stream stream)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.IPGet">
+            <summary>Sets the shim of StreamReader.get_IP()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.IPSetInt32">
+            <summary>Sets the shim of StreamReader.set_IP(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.ImplicitOpStreamReaderStream">
+            <summary>Sets the shim of StreamReader.op_Implicit(StreamReader s)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.IsConnectedGet">
+            <summary>Sets the shim of StreamReader.get_IsConnected()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.OffsetGet">
+            <summary>Sets the shim of StreamReader.get_Offset()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.OffsetSetInt32">
+            <summary>Sets the shim of StreamReader.set_Offset(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.SeekInt32">
+            <summary>Sets the shim of StreamReader.Seek(Int32 offset)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.readInt32">
+            <summary>Sets the shim of StreamReader.read(Int32 length_bits)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.readInt32Int32Int32">
+            <summary>Sets the shim of StreamReader.read(Int32 length_bits, Int32 offset, Int32 ip)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.reset">
+            <summary>Sets the shim of StreamReader.reset()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.shift">
+            <summary>Sets the shim of StreamReader.shift()</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.ShimStreamReader.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.IPGet">
+            <summary>Sets the shim of StreamReader.get_IP()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.IPSetInt32">
+            <summary>Sets the shim of StreamReader.set_IP(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.IsConnectedGet">
+            <summary>Sets the shim of StreamReader.get_IsConnected()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.OffsetGet">
+            <summary>Sets the shim of StreamReader.get_Offset()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.OffsetSetInt32">
+            <summary>Sets the shim of StreamReader.set_Offset(Int32 value)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.SeekInt32">
+            <summary>Sets the shim of StreamReader.Seek(Int32 offset)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.readInt32">
+            <summary>Sets the shim of StreamReader.read(Int32 length_bits)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.readInt32Int32Int32">
+            <summary>Sets the shim of StreamReader.read(Int32 length_bits, Int32 offset, Int32 ip)</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.reset">
+            <summary>Sets the shim of StreamReader.reset()</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.ShimStreamReader.AllInstances.shift">
+            <summary>Sets the shim of StreamReader.shift()</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.StubStream">
+            <summary>Stub type of VM.Global.Stream</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.StubStream.#ctor(System.IO.Stream)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.StubStream.#ctor(System.Byte[]@,System.Int32,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.StubStream.#ctor(System.Boolean,System.Int32,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.StubStream.InitializeStub">
+            <summary>Initializes a new instance of type StubStream</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.StubStream.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.StubStream.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.StubStream.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:VM.Global.Fakes.StubStreamReader">
+            <summary>Stub type of VM.Global.StreamReader</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.StubStreamReader.#ctor(VM.Global.Stream)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Global.Fakes.StubStreamReader.InitializeStub">
+            <summary>Initializes a new instance of type StubStreamReader</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.StubStreamReader.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.StubStreamReader.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Global.Fakes.StubStreamReader.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:VM.Parser.Fakes.ShimInstruct">
+            <summary>Shim type of VM.Parser.Instruct</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.ShimInstruct.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.ShimInstruct.#ctor(VM.Parser.Instruct)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.ShimInstruct.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.ShimInstruct.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.Constructor">
+            <summary>Sets the shim of Instruct.Instruct()</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.DecompressStream">
+            <summary>Sets the shim of Instruct.Decompress(Stream stream)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.EqualsInstruct">
+            <summary>Sets the shim of Instruct.Equals(Instruct obj)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.LengthGet">
+            <summary>Sets the shim of Instruct.get_Length()</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.NCLength">
+            <summary>Sets the shim of Instruct.NCLength()</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.ParseString">
+            <summary>Sets the shim of Instruct.Parse(String s)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.PopStreamReader">
+            <summary>Sets the shim of Instruct.Pop(StreamReader stream)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.PushStream">
+            <summary>Sets the shim of Instruct.Push(Stream stream)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.ToString">
+            <summary>Sets the shim of Instruct.ToString()</summary>
+        </member>
+        <member name="T:VM.Parser.Fakes.ShimInstruct.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.AllInstances.EqualsInstruct">
+            <summary>Sets the shim of Instruct.Equals(Instruct obj)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.AllInstances.LengthGet">
+            <summary>Sets the shim of Instruct.get_Length()</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.AllInstances.NCLength">
+            <summary>Sets the shim of Instruct.NCLength()</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.AllInstances.PushStream">
+            <summary>Sets the shim of Instruct.Push(Stream stream)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimInstruct.AllInstances.ToString01">
+            <summary>Sets the shim of Instruct.ToString()</summary>
+        </member>
+        <member name="T:VM.Parser.Fakes.ShimOperand">
+            <summary>Shim type of VM.Parser.Operand</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.ShimOperand.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.ShimOperand.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.ShimOperand.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimOperand.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimOperand.GetValueStreamReaderDataTypeOut">
+            <summary>Sets the shim of Operand.GetValue(StreamReader stream, DataType&amp; dataType)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimOperand.ParseString">
+            <summary>Sets the shim of Operand.Parse(String s)</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.ShimOperand.PopStreamReader">
+            <summary>Sets the shim of Operand.Pop(StreamReader stream)</summary>
+        </member>
+        <member name="T:VM.Parser.Fakes.ShimOperand.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:VM.Parser.Fakes.StubInstruct">
+            <summary>Stub type of VM.Parser.Instruct</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.StubInstruct.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.StubInstruct.InitializeStub">
+            <summary>Initializes a new instance of type StubInstruct</summary>
+        </member>
+        <member name="M:VM.Parser.Fakes.StubInstruct.ToString">
+            <summary>Sets the stub of Instruct.ToString()</summary>
+        </member>
+        <member name="F:VM.Parser.Fakes.StubInstruct.ToString01">
+            <summary>Sets the stub of Instruct.ToString()</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.StubInstruct.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.StubInstruct.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:VM.Parser.Fakes.StubInstruct.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>
