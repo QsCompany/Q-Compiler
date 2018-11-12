@@ -1,3 +1,0 @@
-E:\Progets\OCompiler\Code\Compiler\obj\Release\Compiler.Resource.resources
-E:\Progets\OCompiler\Code\Compiler\obj\Release\Compiler.csproj.GenerateResource.Cache
-E:\Progets\OCompiler\Code\Compiler\obj\Release\Compiler.csprojResolveAssemblyReference.cache
